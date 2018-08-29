@@ -51,12 +51,23 @@
   <ItemGroup>
     <Compile Include="ApplicationDBContext.cs" />
     <Compile Include="EntityConfigrations\MakeConfiguration.cs" />
+    <Compile Include="Migrations\201808292157352_InitialModel.cs" />
+    <Compile Include="Migrations\201808292157352_InitialModel.Designer.cs">
+      <DependentUpon>201808292157352_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ClientRepository.cs" />
     <Compile Include="Repositories\MakeRepository.cs" />
+    <Compile Include="Repositories\ModelRepository.cs" />
+    <Compile Include="Repositories\VehicleRepository.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +79,11 @@
       <Project>{791E245B-396F-46E1-AA04-1F36A3C94731}</Project>
       <Name>Dealership.DomainEntities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808292157352_InitialModel.resx">
+      <DependentUpon>201808292157352_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
