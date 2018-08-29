@@ -9,7 +9,6 @@ namespace Dealership.DomainEntities
 
         public string Address { get; set; }
         public string PhoneNum { get; set; }
-
         public ICollection<Vehicle> Vehicles { get; set; }
 
     }

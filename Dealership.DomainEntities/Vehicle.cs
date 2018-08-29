@@ -8,6 +8,7 @@ namespace Dealership.DomainEntities
         public string Name { get; set; }
         public string VIN { get; set; }
         public string StockNum { get; set; }
+        public int ModelId { get; set; }
         public Model Model { get; set; }
         public ICollection<Cliant> Vehicles { get; set; }
     }

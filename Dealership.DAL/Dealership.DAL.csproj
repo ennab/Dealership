@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201808292157352_InitialModel.Designer.cs">
       <DependentUpon>201808292157352_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808292340076_AddingVehicleClient.cs" />
+    <Compile Include="Migrations\201808292340076_AddingVehicleClient.Designer.cs">
+      <DependentUpon>201808292340076_AddingVehicleClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClientRepository.cs" />
@@ -83,6 +87,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808292157352_InitialModel.resx">
       <DependentUpon>201808292157352_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808292340076_AddingVehicleClient.resx">
+      <DependentUpon>201808292340076_AddingVehicleClient.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
