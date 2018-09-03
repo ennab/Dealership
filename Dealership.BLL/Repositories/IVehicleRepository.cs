@@ -6,5 +6,7 @@ namespace Dealership.BLL.Repositories
     public interface IVehicleRepository : IRepository<Vehicle>
     {
         IEnumerable<Vehicle> GetBestSellingVehicles(int count);
+        //Vehicle GetByID(int Id);
+
     }
 }
