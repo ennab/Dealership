@@ -21,7 +21,7 @@ namespace Dealership.BLL.Services
         /// </summary>
         /// <param name="vehicleId"></param>
         /// <returns></returns>
-        public Vehicle GetProductById(int vehicleId)
+        public Vehicle GetVehicleById(int vehicleId)
         {
             var vehicle = _unitOfWork.Vehicles.Get(vehicleId);
             if (vehicle != null)
@@ -56,7 +56,7 @@ namespace Dealership.BLL.Services
         /// </summary>
         /// <param name="vehicle"></param>
         /// <returns></returns>
-        public int CreateProduct(Vehicle vehicle)
+        public int CreateVehicle(Vehicle vehicle)
         {
             //using (var scope = new TransactionScope())
             //{
