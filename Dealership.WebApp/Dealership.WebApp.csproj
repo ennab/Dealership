@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ModelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,6 +235,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Models\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -250,6 +252,10 @@
     <ProjectReference Include="..\Dealership.BLL\Dealership.BLL.csproj">
       <Project>{DEBEB3FE-116F-459E-8155-EA36871AE670}</Project>
       <Name>Dealership.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dealership.DAL\Dealership.DAL.csproj">
+      <Project>{AB101FED-A943-47E4-BAB1-658D145E9C74}</Project>
+      <Name>Dealership.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dealership.DomainEntities\Dealership.DomainEntities.csproj">
       <Project>{791e245b-396f-46e1-aa04-1f36a3c94731}</Project>
