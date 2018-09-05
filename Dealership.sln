@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dealership.BLL", "Dealershi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dealership.DomainEntities", "Dealership.DomainEntities\Dealership.DomainEntities.csproj", "{791E245B-396F-46E1-AA04-1F36A3C94731}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dealership.App", "Dealership.App\Dealership.App.csproj", "{1217859B-1A81-490F-9696-BC764ACDACC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{791E245B-396F-46E1-AA04-1F36A3C94731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{791E245B-396F-46E1-AA04-1F36A3C94731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{791E245B-396F-46E1-AA04-1F36A3C94731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1217859B-1A81-490F-9696-BC764ACDACC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1217859B-1A81-490F-9696-BC764ACDACC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1217859B-1A81-490F-9696-BC764ACDACC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1217859B-1A81-490F-9696-BC764ACDACC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
