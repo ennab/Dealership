@@ -10,6 +10,9 @@ namespace Dealership.DomainEntities
         public string StockNum { get; set; }
         public int ModelId { get; set; }
         public Model Model { get; set; }
-        public ICollection<Cliant> Vehicles { get; set; }
+
+        public int? ClientId { get; set; }
+        public Client Client { get; set; }
+        public ICollection<Feature> Features { get; set; }
     }
 }
