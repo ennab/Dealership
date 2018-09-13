@@ -77,6 +77,10 @@
     <Compile Include="Migrations\201809130045556_VehicleFeatureConfig.Designer.cs">
       <DependentUpon>201809130045556_VehicleFeatureConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809130052246_VehicleClientConfig.cs" />
+    <Compile Include="Migrations\201809130052246_VehicleClientConfig.Designer.cs">
+      <DependentUpon>201809130052246_VehicleClientConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClientRepository.cs" />
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809130045556_VehicleFeatureConfig.resx">
       <DependentUpon>201809130045556_VehicleFeatureConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809130052246_VehicleClientConfig.resx">
+      <DependentUpon>201809130052246_VehicleClientConfig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
