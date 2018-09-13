@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Dealership.DAL.Repositories
 {
-    class ClientRepository : Repository<Cliant>, IClientRepository
+    class ClientRepository : Repository<Client>, IClientRepository
     {
         public ClientRepository(ApplicationDBContext context) : base(context)
         {
@@ -13,7 +13,7 @@ namespace Dealership.DAL.Repositories
         }
         public ApplicationDBContext ApplicationDBContext { get { return Context as ApplicationDBContext; } }
 
-        public IEnumerable<Cliant> GetAllClients()
+        public IEnumerable<Client> GetAllClients()
         {
             return ApplicationDBContext.Clients.ToList();
         }

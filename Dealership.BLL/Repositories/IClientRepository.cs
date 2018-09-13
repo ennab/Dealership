@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace Dealership.BLL.Repositories
 {
-    public interface IClientRepository : IRepository<Cliant>
+    public interface IClientRepository : IRepository<Client>
     {
-        IEnumerable<Cliant> GetAllClients();
+        IEnumerable<Client> GetAllClients();
     }
 }

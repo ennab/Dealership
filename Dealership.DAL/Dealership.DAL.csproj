@@ -51,7 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDBContext.cs" />
+    <Compile Include="EntityConfigrations\AddressConfiguration.cs" />
+    <Compile Include="EntityConfigrations\CliantConfiguration.cs" />
+    <Compile Include="EntityConfigrations\FeatureConfiguration.cs" />
     <Compile Include="EntityConfigrations\MakeConfiguration.cs" />
+    <Compile Include="EntityConfigrations\ModelConfiguration.cs" />
+    <Compile Include="EntityConfigrations\VehicleConfiguration.cs" />
     <Compile Include="Migrations\201808292157352_InitialModel.cs" />
     <Compile Include="Migrations\201808292157352_InitialModel.Designer.cs">
       <DependentUpon>201808292157352_InitialModel.cs</DependentUpon>
@@ -59,6 +64,18 @@
     <Compile Include="Migrations\201808292340076_AddingVehicleClient.cs" />
     <Compile Include="Migrations\201808292340076_AddingVehicleClient.Designer.cs">
       <DependentUpon>201808292340076_AddingVehicleClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809130005451_AddingFeatureAddressModels.cs" />
+    <Compile Include="Migrations\201809130005451_AddingFeatureAddressModels.Designer.cs">
+      <DependentUpon>201809130005451_AddingFeatureAddressModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809130015119_ConfigClient.cs" />
+    <Compile Include="Migrations\201809130015119_ConfigClient.Designer.cs">
+      <DependentUpon>201809130015119_ConfigClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809130045556_VehicleFeatureConfig.cs" />
+    <Compile Include="Migrations\201809130045556_VehicleFeatureConfig.Designer.cs">
+      <DependentUpon>201809130045556_VehicleFeatureConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +108,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808292340076_AddingVehicleClient.resx">
       <DependentUpon>201808292340076_AddingVehicleClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809130005451_AddingFeatureAddressModels.resx">
+      <DependentUpon>201809130005451_AddingFeatureAddressModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809130015119_ConfigClient.resx">
+      <DependentUpon>201809130015119_ConfigClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809130045556_VehicleFeatureConfig.resx">
+      <DependentUpon>201809130045556_VehicleFeatureConfig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
