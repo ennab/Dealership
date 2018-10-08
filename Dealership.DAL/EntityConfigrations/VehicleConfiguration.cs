@@ -24,7 +24,7 @@ namespace Dealership.DAL.EntityConfigrations
                 {
                     t.ToTable("VehicleFeatures");
                     t.MapLeftKey("VehicleId");
-                    t.MapRightKey("ModelId");
+                    t.MapRightKey("FeaturelId");
                 });
             HasOptional(c => c.Client)
                 .WithMany(v => v.Vehicles);
