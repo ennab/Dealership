@@ -15,13 +15,14 @@ namespace Dealership.DAL
             Models = new ModelRepository(_context);
             Vehicles = new VehicleRepository(_context);
             Clients = new ClientRepository(_context);
+            Venders = new VendorRepository(_context);
         }
 
         public IMakeRepository Makes { get; private set; }
         public IModelRepository Models { get; private set; }
         public IVehicleRepository Vehicles { get; private set; }
         public IClientRepository Clients { get; private set; }
-
+        public IVendorRepository Venders { get; private set; }
         public int Complete()
         {
             return _context.SaveChanges();

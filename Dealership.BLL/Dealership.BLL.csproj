@@ -50,6 +50,7 @@
     <Compile Include="Repositories\IMakeRepository.cs" />
     <Compile Include="Repositories\IModelRepository.cs" />
     <Compile Include="Repositories\IVehicleRepository.cs" />
+    <Compile Include="Repositories\IVendorRepository.cs" />
     <Compile Include="Services\VehicleServices.cs" />
   </ItemGroup>
   <ItemGroup>

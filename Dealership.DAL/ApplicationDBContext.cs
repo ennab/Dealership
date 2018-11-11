@@ -18,6 +18,7 @@ namespace Dealership.DAL
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Feature> Features { get; set; }
         public virtual DbSet<Address> Addresses { get; set; }
+        public virtual DbSet<Vendor> Venders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -27,6 +28,7 @@ namespace Dealership.DAL
             modelBuilder.Configurations.Add(new CliantConfiguration());
             modelBuilder.Configurations.Add(new VehicleConfiguration());
             modelBuilder.Configurations.Add(new AddressConfiguration());
+            modelBuilder.Configurations.Add(new VenderConfiguration());
         }
     }
 }
